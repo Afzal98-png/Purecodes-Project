@@ -1,0 +1,380 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+p
+{
+  line-height: 1.5;
+  color: gray;
+}
+
+.header
+{
+  background-color: black;
+  display: flex;
+  padding: 20px;
+}
+
+.logo
+{
+  padding-left: 40px;
+}
+
+.header h1
+{
+  display: inline;
+  color: white;
+  padding-right: 40px;
+}
+
+.header a
+{
+  text-decoration: none;
+}
+
+.nav-bar
+{
+  text-align: right;
+  flex-grow: 1;
+  margin: auto;
+}
+
+.banner
+{
+  width:100%;
+}
+
+.features-section
+{
+  margin: 100px 0px;
+}
+
+.features-head-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-head
+{
+  width:100px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.features-details-container
+{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.features-first
+{
+  width:300px;
+  height:370px;
+}
+
+.features-first img
+{
+  padding-bottom: 33px;
+}
+
+.features-second
+{
+  width:300px;
+  height:370px;
+}
+
+.features-second img
+{
+  padding-bottom: 10px;
+}
+
+.features-third
+{
+  width:300px;
+  height:370px;
+}
+
+.testimenials-section
+{
+  margin-bottom: 100px;
+}
+
+.testimenials-head-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimenials-heading
+{
+  width:150px;
+  padding-bottom: 100px;
+}
+
+.testimenials-details-container
+{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimenials-first
+{
+  width:700px;
+  height: 230px;
+}
+
+.t-first-text
+{
+  width: 80%;
+  position: relative;
+  top: 33px;
+}
+
+.testimenials-first img
+{
+  float: left;
+}
+
+.testimenials-second
+{
+  width:700px;
+  height: 300px;
+}
+
+.t-second-text
+{
+  width:50%;
+  position: relative;
+  top: 120px;
+}
+
+.testimenials-second img
+{
+  float: right;
+  width:18%;
+}
+
+.testimenials-third
+{
+  width:700px;
+  height: 300px;
+}
+
+.t-third-text
+{
+  width: 80%;
+  position: relative;
+  top: 33px;
+}
+
+.testimenials-third img
+{
+  float: left;
+
+}
+
+
+
+
+
+
+/* .testimenials
+{
+  text-align: center;
+  margin-bottom: 100px;
+  width:1349px;
+  height: 495px;
+  overflow: scroll;
+}
+
+.t-head
+{
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.t-1-pic img
+{
+  float: left;
+  padding-left: 200px;
+  position: relative;
+  bottom:80px;
+}
+
+.t-1-text
+{
+  text-align: left;
+  width: 40%;
+  margin: auto;
+}
+
+.t-2-pic
+{
+  margin-top: 200px;
+}
+
+.t-2-text
+{
+  text-align: left;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  left:25px;
+}
+
+.t-2-pic img
+{
+  float: right;
+  position:relative;
+  bottom:130px;
+  right:260px;
+  width: 8%;
+}
+
+.t-3-text
+{
+  text-align: left;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  right:70px;
+}
+
+.t-3-pic img
+{
+  float: left;
+  padding-left: 200px;
+  position: relative;
+  bottom:50px;
+  right:135px;
+}
+
+.t-3-pic
+{
+  margin-top: 200px;
+} */
+
+.form-container
+{
+  display: flex;
+  justify-content:center;
+  margin: 100px;
+}
+
+.t-para
+{
+  line-height: 1.5;
+}
+
+.form
+{
+  border: 10px solid black;
+  box-shadow: 10px 5px 5px gray;
+  padding: 200px;
+  width:10px;
+  height:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input
+{
+  display: inline;
+  margin:10px 0px;
+}
+
+.form label
+{
+  display: flex;
+}
+
+.footer-container
+{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: black;
+  padding: 100px;
+}
+
+.footer-links
+{
+  width:200px;
+  height:200px;
+  color: white;
+}
+
+.footer-icons
+{
+  width:200px;
+  height:200px;
+  color: white;
+}
+
+.footer-icons img
+{
+  width:15%;
+}
+
+.footer-address
+{
+  width:200px;
+  height:200px;
+  color: white;
+}
+
+@media (max-width:900px)
+{
+  .footer-container
+  {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:900px)
+{
+  .features-details-container
+  {
+    flex-direction: column;
+  }
+  .features-first
+  {
+    padding-bottom: 100px;
+  }
+  .features-second
+  {
+    padding-bottom: 100px;
+  }
+}
+
+/* @media screen and (max-width:1200px)
+{
+  .features-pic
+  {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .testimenials
+  {
+    width: auto;
+  }
+}
+
+@media screen and (max-width:900px)
+{
+  .logo
+  {
+    justify-content: center;
+  }
+} */
