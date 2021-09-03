@@ -7,7 +7,7 @@
     <title>Internship Project</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <!-- <link rel="stylesheet" href="node js/style.css"> -->
-    <!-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
 
   <body>
@@ -80,7 +80,7 @@
           <!--Container for content-->
           <!-- <div class="container shadow-lg mx-auto bg-white mt-24 md:mt-18"></div> -->
 
-      <div class="header">
+      <div class="header" x-data="{ open: false }">
 
 
         <div class="header-logo">
@@ -95,7 +95,13 @@
         <div class="menu-bar-button">
           <img src="https://static.thenounproject.com/png/1701343-200.png"alt="">
         </div>
-        <div class="nav">
+
+        <button class="menu-bar-btn" @click="open = !open" @click.away="open = false">
+          <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <div class="nav" x-show="open">
           <ul>
             <li><h1>Home</h1></li>
             <li><h1>Contacts</h1></li>

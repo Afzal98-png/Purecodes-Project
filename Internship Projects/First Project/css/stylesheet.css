@@ -22,6 +22,7 @@ p
 
 .nav
 {
+  /*display: none;*/
   background-color: yellow;
 }
 
@@ -30,6 +31,13 @@ p
   text-decoration:none;
 }
 
+/* menu bar btn */
+.menu-bar-btn {
+  width: 50px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .header
 {
@@ -357,6 +365,10 @@ p
   {
     display: none;
   }
+
+  /*.nav {*/
+  /*  display: block;*/
+  /*}*/
 
 
 }
