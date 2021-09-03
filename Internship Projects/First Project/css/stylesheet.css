@@ -11,6 +11,26 @@ p
   color: gray;
 }
 
+.menu-bar-button
+{
+  display: flex;
+  justify-content: flex-end;
+  background-color: white: ;
+  width:100px;
+  height:100px;
+}
+
+.nav
+{
+  background-color: yellow;
+}
+
+.nav ul li
+{
+  text-decoration:none;
+}
+
+
 .header
 {
   background-color: black;
@@ -332,5 +352,11 @@ p
   {
     height: 600px;
   }
+
+  .nav-bar
+  {
+    display: none;
+  }
+
 
 }
