@@ -4,18 +4,40 @@
     <meta charset="utf-8">
     <title>contacts</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
 
-    <section>
-      <div class="header">
-        <img  class="logo" src="images/logo.svg" alt="logo">
+    <section x-data="{ open: false }">
+
+      <div class="header" >
+
+        <button class="menu-bar-btn" @click="open = !open" @click.away="open = false">
+          <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <div class="headerlogo">
+          <div class="header-logo">
+            <img  class="logo" src="images/logo.svg" alt="logo">
+          </div>
+        </div>
+
         <div class="nav-bar">
           <h1>Home</h1>
           <h1>Contacts</h1>
-          <h1>Log in</h1>
+          <a href="Login.html"><h1>Log in</h1></a>
         </div>
+
       </div>
+
+      <div class="nav" x-show="open">
+        <h1>Home</h1>
+        <h1>Contacts</h1>
+        <a href="Login.html"><h1>Log in</h1></a>
+      </div>
+
     </section>
 
     <section class="form-container">
