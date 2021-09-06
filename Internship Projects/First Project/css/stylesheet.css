@@ -422,5 +422,13 @@ p
   .second-part
   {
     padding: 100px 0px 0px;
+
   }
+
+  .first-part
+  {
+    padding-right: 0px;
+
+  }
+
 }
